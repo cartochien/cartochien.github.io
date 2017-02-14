@@ -1,0 +1,117 @@
+body
+{
+    font-family: Karla, Verdana, sans-serif;
+    padding: 10%
+    color: gray;
+    
+    
+}
+
+h1
+{
+    font-family: Karla, serif;
+    float: left;
+    font-size: 22px;
+    padding: 10px 0px 0px 55px;
+}
+/*
+#contact
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    bring your own prefixes 
+    transform: translate(-50%, -50%);
+}*/
+
+span{
+   font-weight: normal;
+}
+
+#navBar
+{
+    float: right;
+    font-family: Karla, serif;
+    font-size: 18px;
+    padding: 10px 55px 0px 0px;
+    
+}
+
+a
+{
+    color: black;
+    padding: 0.25em;
+    text-decoration:none;
+}
+
+
+a:hover
+{
+    color: gray;
+}
+
+
+img
+{
+    width: 35%;
+    height: auto;
+}
+
+#imgDivID
+{
+    /*width: 650px;*/
+    float: left;
+}
+
+#project
+{
+    float: right;
+}
+
+.figures hover
+{
+    border: 1px solid #777;
+}
+
+.captions
+{
+    padding: 15px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.figures
+{
+    width: 250px;
+    margin: 5px;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+ul
+{
+    padding:0;
+}
+
+li
+{
+    display: inline-block;
+    width: 115px;
+}
+
+#gallery
+{
+    clear: right;
+}
+
+footer {   
+   font-family: Karla, sans-serif;
+   position:fixed;
+   left:40px;
+   bottom:0px;
+   height:30px;
+   /*padding: 20px;*/
+   width:100%;
+   font-size:80%;
+   color: lightgray;
+}

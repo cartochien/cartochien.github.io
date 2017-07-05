@@ -1,117 +1,71 @@
-body
-{
-    font-family: Karla, Verdana, sans-serif;
-    padding: 10%
-    color: gray;
-    
-    
-}
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 
-h1
-{
-    font-family: Karla, serif;
-    float: left;
+h1 {
+    text-align: center;
     font-size: 22px;
-    padding: 10px 0px 0px 55px;
-}
-/*
-#contact
-{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    bring your own prefixes 
-    transform: translate(-50%, -50%);
-}*/
-
-span{
-   font-weight: normal;
-}
-
-#navBar
-{
-    float: right;
-    font-family: Karla, serif;
-    font-size: 18px;
-    padding: 10px 55px 0px 0px;
-    
-}
-
-a
-{
+    font-family: Karla;
     color: black;
-    padding: 0.25em;
-    text-decoration:none;
 }
 
-
-a:hover
-{
-    color: gray;
+img:hover {
+    opacity: 0.5;
 }
 
-
-img
-{
-    width: 35%;
-    height: auto;
+img.center {
+    display:block ;
+    margin-left: auto ;
+    margin-right: auto ;
 }
 
-#imgDivID
-{
-    /*width: 650px;*/
-    float: left;
+a {
+    text-align: center;
+    color: black;
+
 }
 
-#project
-{
-    float: right;
+a:link {
+    text-decoration: none;
 }
 
-.figures hover
-{
-    border: 1px solid #777;
+.showcase {
+    margin: 0 auto;
 }
 
-.captions
-{
-    padding: 15px;
-    font-size: 12px;
-    text-align: left;
+.navigation{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: blue;
 }
 
-.figures
-{
-    width: 250px;
-    margin: 5px;
-    float: left;
-    border: 1px solid #ccc;
+.about{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
 }
 
-ul
-{
-    padding:0;
+.caption {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-li
-{
-    display: inline-block;
-    width: 115px;
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-#gallery
-{
-    clear: right;
+.portfolio-item {
+    margin-bottom: 25px;
 }
 
-footer {   
-   font-family: Karla, sans-serif;
-   position:fixed;
-   left:40px;
-   bottom:0px;
-   height:30px;
-   /*padding: 20px;*/
-   width:100%;
-   font-size:80%;
-   color: lightgray;
+footer {
+    margin: 50px 0;
+}
+
+.navbar-brand {
+    color: white;
 }

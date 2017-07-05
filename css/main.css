@@ -11,7 +11,19 @@ h1 {
     color: black;
 }
 
-img:hover {
+h3 {
+    color: black;
+}
+
+h4 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+img:not(.center):hover {
     opacity: 0.5;
 }
 
@@ -19,6 +31,7 @@ img.center {
     display:block ;
     margin-left: auto ;
     margin-right: auto ;
+    margin-bottom: 30px;
 }
 
 a {
@@ -31,15 +44,11 @@ a:link {
     text-decoration: none;
 }
 
-.showcase {
-    margin: 0 auto;
-}
 
 .navigation{
     text-align: center;
     font-size: 13px;
     margin-bottom: 10px;
-    color: blue;
 }
 
 .about{
@@ -49,7 +58,6 @@ a:link {
 }
 
 .caption {
-    text-align: center;
     font-size: 16px;
     margin-bottom: 20px;
 }

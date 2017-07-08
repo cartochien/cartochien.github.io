@@ -23,8 +23,12 @@ p {
     color: black;
 }
 
-img:not(.center):hover {
-    opacity: 0.5;
+.img-responsive.gallery:hover {
+    opacity: 0.75;
+}
+
+.break {
+    margin-bottom: 10px:
 }
 
 img.center {

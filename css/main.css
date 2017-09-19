@@ -28,11 +28,11 @@ h1.page-title {
 }
 
 .img-responsive.gallery {
-    box-shadow:  1px 1px 25px 1px #e6e6e6;
+    box-shadow:  1px 1px 25px 1px #A9A9A9;
 }
 
 .img-responsive.gallery:hover {
-    opacity: 0.75;
+    opacity: 0.6;
     
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;

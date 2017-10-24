@@ -5,13 +5,13 @@
  */
 
 * {
- font-family: Karla;
+ font-family: Karla, sans-serif;
 }
 
 h1 {
     text-align: center;
     font-size: 22px;
-    font-family: Karla;
+    font-family: Karla, sans-serif;
     color: black;
 }
 

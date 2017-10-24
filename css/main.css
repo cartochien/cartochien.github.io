@@ -4,9 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-* {
- font-family: Karla, sans-serif;
-}
+
 
 h1 {
     text-align: center;
@@ -17,6 +15,7 @@ h1 {
 
 h3 {
     color: black;
+    font-family: Roboto, sans-serif;
 }
 
 h4 {
@@ -25,6 +24,7 @@ h4 {
 
 p {
     color: black;
+    font-family: Roboto, sans-serif;
 }
 
 h1.page-title {

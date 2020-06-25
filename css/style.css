@@ -1,18 +1,10 @@
-div.cc-footer-image {
-  content:url('/img/footer_image.png');
-  max-width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-img:nth-of-type(1) {
+img:nth-of-type(1) { /*corresponds with cc-avatar*/
   width: 150px;
 }
 
 a {
   color: #272727;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
@@ -22,45 +14,49 @@ a:hover {
   color: #696969;
 }
 
-.cc-vertical-center {
+.cc-horizontal-center {
   display: flex;
   text-align: center;
   justify-content: center;
-  align-items: center;
 }
 
 .cc-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 150%;
-  margin-top: 25px;
 }
 
 .cc-subheader {
   color: #696969;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.cc-wrap {
-  display: flex;
+.cc-outer-wrap {
+  display: inline-block;
   width: 65%;
-  margin: 0 auto;
 }
 
-.cc-photo {
-  width: 35%;
-  margin-top: 20px;
+.cc-inner-wrap {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
+
+.cc-avatar {
+  width: 35%;
+}
+
 .cc-bio {
   width: 65%;
   margin-top: 25px;
   text-align: left;
-  font-family: 'Nunito', serif;
+  font-family: 'Nunito Sans', serif;
   font-weight: 300;
   font-size: 90%;
+  padding: 5px;
 }
 
 .cc-email {
@@ -68,57 +64,33 @@ a:hover {
   font-weight: 200;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other
-instead of next to each other */
-@media (max-width: 767px) {
-  body {
-    margin-bottom: 0;
+/* div layout collapses into one column */
+@media (max-width: 768px) {
+  .cc-outer-wrap {
+    width: 75%;
   }
-
-  div.cc-footer-image {
-    content:url('/img/small_footer_image.png');
-    position: relative; /* Keeps footer image stuck to bottom of page */
-  }
+  .cc-inner-wrap {
+    flex-direction: column;
+    }
 
   img:nth-of-type(1) {
     width: 115px;
   }
 
-  .cc-wrap {
-    flex-direction: column;
-    width: 95%;
+  .cc-avatar {
+    width: auto;
+    margin-top: 10px;
   }
 
-  .cc-photo,
   .cc-bio {
     width: auto;
+    margin-top: 0px;
   }
 }
 
-@media (max-width: 450px) {
-  div.cc-footer-image {
-    position: fixed;  /*Keeps footer image stuck to bottom of page */
-  }
-
-  .cc-title {
-    margin-top: 5px;
-    font-size: 100%;
-  }
-
-  .cc-photo,
-  .cc-bio {
-    margin-top: 5px;
-  }
-}
-
-@media (max-height: 450px) {
-  .cc-title {
-    font-size: 125%;
-  }
-
-  .cc-photo,
-  .cc-bio {
-    margin-top: 10px;
-    font-size: 80%;
+/* cc-bio text takes up full width in mobile */
+@media (max-width: 414px) {
+  .cc-outer-wrap {
+    width: 100%;
   }
 }

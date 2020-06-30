@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Chien</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/colcade.js"></script>
+  </head>
+  <body class="cc-background cc-horizontal-center">
+    <div class="cc-outer-wrap">
+      <div class="cc-title"><a href="/index.html" class="cc-title-link">cartochien</a></div>
+      <div class="cc-subheader">makin' maps and makin' friends</div>
+      <!-- PORTFOLIO GOES HERE -->
+      <div class="cc-portfolio">
+        <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+          <div class="grid-col grid-col--1"></div>
+          <div class="grid-col grid-col--2"></div>
+          <div class="grid-col grid-col--3"></div>
+          <div class="grid-col grid-col--4"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/taipei_buildings.png" onclick="openModal();currentSlide(1)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/interactive_ocarina.gif" onclick="openModal();currentSlide(2)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/amelia_earhart.png" onclick="openModal();currentSlide(3)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/fortworth_downtown.png" onclick="openModal();currentSlide(4)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/nashville_downtown.png" onclick="openModal();currentSlide(5)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/milwaukee_downtown.png" onclick="openModal();currentSlide(6)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/prontopia_rome.png" onclick="openModal();currentSlide(7)""></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/prontopia_florence.png" onclick="openModal();currentSlide(8)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/newyork_osmani.png" onclick="openModal();currentSlide(9)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/polarmade_us.png" onclick="openModal();currentSlide(10)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/map_generator.png" onclick="openModal();currentSlide(11)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/formosa_color.png" onclick="openModal();currentSlide(12)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/formosa_mono.png" onclick="openModal();currentSlide(13)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/peru_wari.png" onclick="openModal();currentSlide(14)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/cahokia_illinois.png" onclick="openModal();currentSlide(15)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/ngogo_uganda.png" onclick="openModal();currentSlide(16)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/acre_brazil.png" onclick="openModal();currentSlide(17)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/africa_rainfall.png" onclick="openModal();currentSlide(18)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/diabetes_obesity.png" onclick="openModal();currentSlide(19)"></div>
+          <div class="grid-item cc-portfolio-item"><img src="img/portfolio/population_change.png" onclick="openModal();currentSlide(20)"></div>
+        </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content cc-mostly-vertical-center">
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/taipei_buildings.png">
+              <figcaption class="cc-caption">Vector illustrations of iconic buildings and bridges in Taipei</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/interactive_ocarina.gif">
+              <figcaption class="cc-caption">Interactive Ocarina made in Javascript with hidden easter eggs that give a nod to the game that inspired it…
+              You can play it <a href="https://cartochien.github.io/interactive_ocarina/" class="cc-caption-link">here</a></figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/amelia_earhart.png">
+              <figcaption class="cc-caption">A map commemorating Amelia Earhart’s legendary flight around the world for Maps.com's
+              <a href="https://www.maps.com/pages/international-map-day-celebrating-amelia-earhart" class="cc-caption-link">International Map Day</a> campaign</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/fortworth_downtown.png">
+              <figcaption class="cc-caption">Walking guide map for the 2020 MEGA Conference in Fort Worth, Texas</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/nashville_downtown.png">
+              <figcaption class="cc-caption">Walking guide map for the 2019 LION Publishers Summit in Nashville, Tennessee</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/milwaukee_downtown.png">
+              <figcaption class="cc-caption">Walking guide map for the 2019 NNA Convention in Milwaukee, Wisconsin</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/prontopia_rome.png">
+              <figcaption class="cc-caption">Back side of the trifold tourist guide of Rome made for the travel app Prontopia </figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/prontopia_florence.png">
+              <figcaption class="cc-caption">Back side of the trifold tourist guide of Florence made for the travel app Prontopia </figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/newyork_osmani.png">
+              <figcaption class="cc-caption">Large real estate wall map of the outer suburbs of New York City for a custom maps client</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/polarmade_us.png">
+              <figcaption class="cc-caption">Large wall map of annual snowfall in select midwestern states for North American roof rake company, PolarMade</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/map_generator.png">
+              <figcaption class="cc-caption">Prototype web app for a client that allows them to upload a photo and generate a web map showing the location where the photo was taken. Try out the prototype <a href="https://maps05.maps.com/noozhawk/location_map/" class="cc-caption-link">here</a></figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/formosa_color.png">
+              <figcaption class="cc-caption">19th century style map of Taiwan </figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/formosa_mono.png">
+              <figcaption class="cc-caption">19th century style map of Taiwan in monochromatic color palette</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/peru_wari.png">
+              <figcaption class="cc-caption">Simple, grayscale map of the Wari Sites in Peru for a paper by PhD Student Matt Biwer on food-related practices and agricultural production </figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/cahokia_illinois.png">
+              <figcaption class="cc-caption">One of a few maps for Christina Friberg’s dissertation titled <a href="https://escholarship.org/content/qt7w42222c/qt7w42222c.pdf" class="cc-caption-link">“Igniting Interaction through Mississippian Tradition-making: An Interregional Analysis at the Audrey Site (11GE20)”</a></figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/ngogo_uganda.png">
+              <figcaption class="cc-caption">Map showing the location of Ngogo, a chimpanzee community, in Uganda</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/acre_brazil.png">
+              <figcaption class="cc-caption">Map of the Acre region in Brazil for Professor Jeffrey Hoelle’s paper <a href="https://www.tandfonline.com/doi/full/10.1080/1747423X.2018.1475516" class="cc-caption-link">“Quantifying cultural values associated with deforestation in the Brazilian Amazon”</a></figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/africa_rainfall.png">
+              <figcaption class="cc-caption">12 out of 366 maps created visualizing rainfall in Africa in 2016 for an Intro to Cartography course</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/diabetes_obesity.png">
+              <figcaption class="cc-caption">Bivariate choropleth map of obesity and diabetes in California for an Intro to Cartography course</figcaption>
+            </figure>
+          </div>
+          <div class="mySlides">
+            <figure>
+              <img src="img/portfolio/population_change.png">
+              <figcaption class="cc-caption">Population change map made for an Intro to Cartography course and the first finished map I made</figcaption>
+            </figure>
+          </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

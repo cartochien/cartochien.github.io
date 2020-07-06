@@ -10,7 +10,7 @@ html {
   width: 150px;
 }
 
-a:not(.cc-title-link):not(.prev):not(.next):not(.cc-caption-link) {
+a:not(.cc-title-link):not(.prev):not(.next):not(.cc-caption-link):not(.cc-menu-link) {
   color: #272727;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
@@ -63,6 +63,35 @@ a:hover {
 .cc-inner-wrap {
   display: flex;
   margin: 0 auto;
+}
+
+.cc-menu {
+  margin-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+
+a.cc-menu-link {
+  color: #272727;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-size: 90%;
+/*  border-style: dashed;*/
+  margin: 5px;
+}
+
+a.cc-active {
+  text-decoration: underline;
 }
 
 .cc-avatar {
@@ -279,12 +308,16 @@ img.hover-shadow {
 
   .cc-avatar {
     width: auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .cc-bio {
     width: auto;
     margin-top: 0px;
+  }
+
+  .cc-portfolio {
+    margin-top: 15px;
   }
 
   .cc-column {

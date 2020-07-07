@@ -66,7 +66,7 @@ a:hover {
 }
 
 .cc-menu {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 ul {
@@ -96,12 +96,12 @@ a.cc-active {
 
 .cc-avatar {
   width: 35%;
-  margin-top: 25px;
+  margin-top: 2px;
 }
 
 .cc-bio {
   width: 65%;
-  margin-top: 25px;
+  margin-top: 2px;
   text-align: left;
   font-family: 'Nunito Sans', serif;
   font-weight: 300;
@@ -110,7 +110,7 @@ a.cc-active {
 }
 
 .cc-portfolio {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .cc-portfolio-item img{
@@ -308,16 +308,12 @@ img.hover-shadow {
 
   .cc-avatar {
     width: auto;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .cc-bio {
     width: auto;
     margin-top: 0px;
-  }
-
-  .cc-portfolio {
-    margin-top: 15px;
   }
 
   .cc-column {

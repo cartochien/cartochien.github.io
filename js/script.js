@@ -1,3 +1,59 @@
+// BEGIN DARK MODE 
+function toggleDarkMode() {
+  backgroundChange();
+  pictureChange();
+  iconChange();
+  textChange();
+} 
+
+function backgroundChange() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+function pictureChange() {
+  if (document.getElementById("cc-avatar").src.match("self_portrait_dark_mode")) {
+    document.getElementById("cc-avatar").src = "img/self_portrait.png";
+    document.getElementById("cc-footer").src = "img/cc_footer.png";
+    // document.getElementById("cc-dark-mode-toggle").src = "img/sun.svg";
+  }
+  else {
+    document.getElementById("cc-avatar").src = "img/self_portrait_dark_mode.png";
+    document.getElementById("cc-footer").src = "img/cc_footer_dark_mode.png";
+    // document.getElementById("cc-dark-mode-toggle").src = "img/moon.svg";
+  }
+}
+
+function iconChange() {
+  if (document.getElementById("cc-dark-mode-toggle").src.match("moon")) {
+    document.getElementById("cc-dark-mode-toggle").src = "img/sun.svg";
+  }
+  else {
+    document.getElementById("cc-dark-mode-toggle").src = "img/moon.svg";
+  }
+}
+
+function textChange() {
+  // document.querySelectorAll("a")[0].style.color = "white";
+  var link = document.querySelectorAll("a:not(.prev):not(.next):not(.cc-caption-link)");
+  
+  if (document.getElementById("cc-dark-mode-toggle").src.match("moon")) {
+    for (var i=0, max=link.length; i < max; i++) {
+      link[i].style.color = " #D0D0D0";
+    }
+    document.getElementsByClassName("cc-subheader")[0].style.color = "#D0D0D0";
+  } else {
+    for (var i=0, max=link.length; i < max; i++) {
+      link[i].style.color = "#272727";
+    }
+    document.getElementsByClassName("cc-subheader")[0].style.color = "#272727";
+  }
+}
+
+// END DARK MODE
+
+//BEGIN MODAL
+
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -46,3 +102,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
+// END MODAL

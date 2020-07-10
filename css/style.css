@@ -6,11 +6,24 @@ html {
   overflow-y: scroll;
 }
 
+section {
+  height: 100vh;
+}
+
+.dark-mode {
+  background-color: #282828;
+  color: #D0D0D0;
+}
+
+/*.dark-mode-link {
+  color: #D0D0D0;
+}*/
+
 .cc-avatar img {
   width: 150px;
 }
 
-a:not(.cc-title-link):not(.prev):not(.next):not(.cc-caption-link):not(.cc-menu-link) {
+a:not(.cc-title-link):not(.prev):not(.next):not(.cc-caption-link):not(.cc-menu-link):not(.cc-portfolio-body) {
   color: #272727;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
@@ -21,10 +34,6 @@ a:not(.cc-title-link):not(.prev):not(.next):not(.cc-caption-link):not(.cc-menu-l
 a.cc-title-link {
   color: #272727;
   text-decoration: none;
-}
-
-a:hover {
-  color: #696969;
 }
 
 .cc-horizontal-center {
@@ -64,21 +73,21 @@ a:hover {
   display: flex;
   margin: 0 auto;
 }
-
+/*
 .cc-menu {
-  margin-top: 10px;
-}
+  margin-top: 2px;
+}*/
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 li {
   display: inline;
 }
-
 
 a.cc-menu-link {
   color: #272727;
@@ -90,7 +99,26 @@ a.cc-menu-link {
   margin: 5px;
 }
 
-a.cc-active {
+a.cc-portfolio-body {
+  text-decoration: none;
+  font-family: 'Nunito Sans', serif;
+  font-weight: 300;
+  font-size: 90%;
+  color: #272727;
+}
+
+#cc-dark-mode-toggle {
+  cursor: pointer;
+  position: relative;
+  top: 6px;
+}
+
+/*a.cc-active {
+  text-decoration: underline;
+}*/
+
+a:hover:not(.cc-title-link) {
+  color: #696969 !important; /* figure out how to get hover to apply to bio links without using !important */
   text-decoration: underline;
 }
 
@@ -109,8 +137,20 @@ a.cc-active {
   padding: 5px;
 }
 
+.cc-hr {
+  height: 3px;
+  background-color: #DCDCDC;
+  border: none;
+}
+
 .cc-portfolio {
   margin-top: 5px;
+}
+
+.cc-portfolio-title {
+  font-family: 'Nunito Sans', serif;
+  font-weight: 600;
+  font-size: 105%;
 }
 
 .cc-portfolio-item img{
@@ -121,6 +161,10 @@ a.cc-active {
 .cc-portfolio-item:hover {
   opacity: 0.7;
   transition: 0.4s ease;
+}
+
+.cc-rounded-corners {
+  border-radius: 5px;
 }
 
 .cc-email {
